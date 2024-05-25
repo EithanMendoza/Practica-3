@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGKCwfM236J2SoyyyLQdhuecvAPO1Fg68&libraries=places"></script>
+    <title>Registro de Evento</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Evento</h1>
+    </header>
+    <div>
+        <div class="main">
+            <form>
+                <div class="form-group">
+                    <label for="fecha-hora">Fecha y Hora:</label>
+                    <input type="datetime-local" id="fecha-hora" name="fecha-hora" required title="fecha-hora">
+                </div>
+                <div class="form-group">
+                    <label for="ubicacion">Ubicación:</label>
+                    <input type="text" id="ubicacion" name="ubicacion" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Registrar Evento</button>
+                </div>
+            </form>
+            
+            <div id="map" style="height: 500px; width: 100%;"></div>
+
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Registrar Asistencia</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
